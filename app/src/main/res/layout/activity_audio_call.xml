@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/call_background_1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/top_layout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:id="@+id/tv_username"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:textSize="27dp"
+            android:fontFamily="serif-monospace"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_username"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:id="@+id/tv_call_time"
+            android:textColor="@color/white"
+            android:text="00:00"
+            android:textSize="20dp"/>
+
+    </RelativeLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/user_photo"
+        android:layout_below="@id/top_layout"
+        android:src="@drawable/profile_icon"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/user_photo"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:padding="5dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/circle_bg_status"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_speaker_pressed"/>
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/circle_bg_status"
+            android:padding="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_videocam"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:padding="5dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/circle_bg_status"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_mic_pressed"/>
+
+    </LinearLayout>
+
+    <com.skyfishjy.library.RippleBackground
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:id="@+id/content"
+        app:rb_color="#F6E4EB"
+        app:rb_type="strokeRipple"
+        app:rb_radius="20dp"
+        app:rb_rippleAmount="4"
+        app:rb_duration="3200"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        app:rb_scale="6">
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:id="@+id/centerImage"
+            android:onClick="endCall"
+            android:src="@drawable/call_reject_1"
+            android:layout_centerInParent="true"
+            />
+    </com.skyfishjy.library.RippleBackground>
+
+</RelativeLayout>

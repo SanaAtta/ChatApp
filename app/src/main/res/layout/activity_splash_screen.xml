@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Splash_Screen">
+    <LinearLayout
+        android:id="@+id/titleimage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="170sp">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="186dp"
+            android:layout_height="159dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/message_icon"/>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/titletxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/splashText"
+            android:layout_width="300sp"
+            android:layout_height="70dp"
+            android:text="Chat Application"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textColor="@color/purple_500"/>
+
+        <TextView
+            android:id="@+id/splashDesc"
+            android:layout_width="500sp"
+            android:layout_height="65sp"
+            android:layout_gravity="center"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/purple_500"
+            android:textSize="16sp"/>
+
+    </RelativeLayout>
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

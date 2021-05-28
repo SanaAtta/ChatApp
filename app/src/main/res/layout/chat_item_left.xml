@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/profile_image"
+        android:src="@mipmap/ic_launcher"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/profile_image"
+        android:layout_marginLeft="2dp"
+        android:text="Hello this is message"
+        android:id="@+id/show_message"
+        android:textSize="18sp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingRight="30dp"
+        android:paddingLeft="20dp"
+
+        android:background="@drawable/txt_received_background"
+        />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/time"
+        android:layout_above="@+id/show_message"
+        android:layout_toEndOf="@id/show_message"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="-20dp"
+        android:layout_marginLeft="-30dp"
+        app:srcCompat="@drawable/ic_keyboard_arrow_down_black_24dp"
+        android:layout_toRightOf="@id/show_message" />
+
+    <TextView
+        android:id="@+id/txt_seen"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/show_message"
+        />
+    <com.dmallcott.dismissibleimageview.DismissibleImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/media_img"
+        android:scaleType="centerCrop"
+        android:layout_alignParentStart="true"
+        android:layout_margin="5dp"
+        android:layout_alignParentLeft="true" />
+    <VideoView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/meida_video"
+        android:scaleType="centerCrop"
+        android:layout_alignParentStart="true"
+        android:layout_margin="5dp"
+        android:layout_alignParentLeft="true" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/meida_uni"
+        android:scaleType="centerCrop"
+        android:layout_alignParentStart="true"
+        android:layout_margin="5dp"
+        android:layout_alignParentLeft="true" />
+
+
+
+</RelativeLayout>

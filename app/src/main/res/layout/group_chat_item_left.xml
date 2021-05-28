@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="100dp"
+    android:layout_marginTop="10dp"
+    android:padding="10dp"
+    android:background="@drawable/bg_receiver">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="Name"
+        android:id="@+id/Name"
+        android:layout_marginLeft="5dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Name"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="Hello this is message"
+        android:id="@+id/show_message"
+        />
+    <TextView
+        android:id="@+id/txt_seen"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/show_message"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="12:00 PM"
+        android:layout_below="@id/show_message"
+        android:layout_marginEnd="5dp"
+        android:textSize="12sp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp" />
+    <VideoView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/meida_video"
+        android:scaleType="centerCrop"
+        android:layout_alignParentStart="true"
+        android:layout_margin="5dp"
+        android:layout_alignParentLeft="true" />
+    <com.dmallcott.dismissibleimageview.DismissibleImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/media_img"
+        android:scaleType="centerCrop"
+        android:layout_alignParentStart="true"
+        android:layout_margin="5dp"
+        android:layout_alignParentLeft="true" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/meida_uni"
+        android:scaleType="centerCrop"
+        android:layout_alignParentStart="true"
+        android:layout_margin="5dp"
+        android:layout_alignParentLeft="true" />
+</RelativeLayout>

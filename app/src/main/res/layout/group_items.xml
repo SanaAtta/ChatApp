@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+
+<de.hdodenhof.circleimageview.CircleImageView
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:id="@+id/groupIconIv"
+    android:src="@drawable/user_img"
+    tools:ignore="VectorDrawableCompat" />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/groupTitleTv"
+    android:text="groupTitleTv"
+    android:layout_marginStart="10dp"
+    android:layout_toRightOf="@+id/groupIconIv"
+    android:layout_toEndOf="@id/groupIconIv"
+    android:textSize="18sp"
+    android:layout_marginLeft="4dp" />
+<TextView
+    android:id="@+id/timeTv"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="18dp"
+    android:text="4:52 PM"
+    android:textSize="10sp"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentRight="true" />
+<!--<ImageView-->
+<!--    android:id="@+id/check_tick"-->
+<!--    android:layout_width="16dp"-->
+<!--    android:layout_height="16dp"-->
+<!--    android:layout_below="@id/groupTitleTv"-->
+<!--    android:visibility="visible"-->
+<!--    app:srcCompact="@drawable/ic_check_black_24dp"-->
+<!--    tools:tint="#000000"-->
+<!--    android:layout_marginTop="5dp"-->
+<!--    android:layout_marginStart="10dp"-->
+<!--    android:layout_toRightOf="@id/groupIconIv"-->
+<!--    android:layout_marginLeft="10dp"-->
+<!--    tools:ignore="MissingPrefix" />-->
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/groupTitleTv"
+    android:layout_marginTop="5dp"
+    android:text="Sender Name"
+    android:id="@+id/nameTv"
+    android:layout_marginLeft="60dp"
+    android:textColor="@color/black"
+    android:maxLines="1"
+    />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/groupTitleTv"
+    android:layout_marginTop="5dp"
+    android:layout_marginStart="5dp"
+    android:text="ABC"
+    android:id="@+id/messageTV"
+    android:layout_toRightOf="@id/nameTv"
+    android:textColor="#666262"
+    android:maxLines="1"
+    android:layout_marginLeft="5dp" />
+</RelativeLayout>

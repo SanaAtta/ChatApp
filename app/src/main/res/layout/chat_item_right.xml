@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    >
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile_image"
+            android:visibility="gone"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/profile_image"
+            android:layout_marginLeft="5dp"
+            android:text=""
+            android:paddingLeft="10dp"
+            android:paddingRight="40dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/show_message"
+            android:textSize="15sp"
+            android:textColor="#fff"
+
+            android:background="@drawable/txt_sent_background"
+            android:layout_toStartOf="@id/time" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/time"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="-3dp"
+            android:layout_marginRight="7dp"
+            app:srcCompat="@drawable/ic_keyboard_arrow_down_black_24dp"/>
+        <TextView
+            android:id="@+id/txt_seen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/show_message"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            />
+        <com.dmallcott.dismissibleimageview.DismissibleImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/media_img"
+            android:scaleType="centerCrop"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="5dp"
+            android:layout_alignParentRight="true" />
+        <VideoView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/meida_video"
+            android:scaleType="centerCrop"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="5dp"
+            android:layout_alignParentRight="true" />
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/meida_uni"
+            android:scaleType="centerCrop"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="5dp"
+            android:layout_alignParentRight="true" />
+
+
+    </RelativeLayout>
+</RelativeLayout>
